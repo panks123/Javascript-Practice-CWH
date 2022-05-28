@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAlarm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="alarm.svg" alt="" width="50" style="filter: invert(100%);">
+                <span class="title inline" style="font-size: 1.5rem;">MyAlarm</span>
+            </a>
+            <div class="today" id="today" style="color: white;">
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="display: flex;">
+        <div class="timeSection mx-5 my-4">
+            <label for="time">Select a time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div class="dayOptions mx-5 my-4">
+
+            <div>Tick the days you want to put an alarm</div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="everyday" value="7">
+                <label class="form-check-label" for="inlineCheckbox1">Everyday</label>
+            </div>
+
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="sunday" value="0">
+                <label class="form-check-label" for="inlineCheckbox1">Sunday</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="monday" value="1">
+                <label class="form-check-label" for="inlineCheckbox1">Monday</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="tuesday" value="2">
+                <label class="form-check-label" for="inlineCheckbox1">Tuesday</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="wednesday" value="3">
+                <label class="form-check-label" for="inlineCheckbox1">Wednesday</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="thursday" value="4">
+                <label class="form-check-label" for="inlineCheckbox1">Thursday</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="friday" value="5">
+                <label class="form-check-label" for="inlineCheckbox1">Friday</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="saturday" value="6">
+                <label class="form-check-label" for="inlineCheckbox1">Saturday</label>
+            </div>
+            <br>
+            <div class="btn">
+                <button type="button" class="btn btn-success my-3" id="setAlarm">Set alarm</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-0">
+        <hr>
+        <h4>Your alarms </h4>
+        <hr style="color: black;">
+        <div id="alarms" class="row container-fluid" style="justify-content: center;">
+            <!-- Here all the alarms will be added dynamically by Javascript -->
+        </div>
+        
+    </div>
+
+
+    <script src="excercise6.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
